@@ -122,6 +122,8 @@ h2,
     padding: 2rem;
 }
 
+
+
 .mobile-menu__header {
     display: flex;
     justify-content: space-between;
@@ -320,6 +322,65 @@ main {
     font-size: .75rem;
 }
 
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+/*responsive de ambas pantallas*/
+
+
+
+
+
+
+
+
+
+/*responsive (330px)*/
+
+@media screen and (min-width: 330px) {
+    .intro__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem;
+        background-color: black;
+        /* Agrega el fondo negro */
+        color: white;
+        /* Cambia el color del texto a blanco */
+        padding: 1rem;
+        /* Ajusta el espacio interno */
+    }
+
+    .intro__info p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin: 1rem;
+    }
+}
+
+.creations__grid>div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    text-align: center;
+}
+
+.creations__grid>div>h2 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+
+
+/*responsive 800px*/
+
 @media screen and (min-width: 800px) {
     .hero {
         background-image: url("../images/desktop/image-hero.png");
@@ -403,16 +464,16 @@ main {
         gap: 1.5rem;
     }
 
-    .creations__grid > div {
+.creations__grid>div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 25rem;
+}
 
-        background-repeat: no-repeat;
-        background-position: center center; /* Centra las imágenes verticalmente y horizontalmente */
-        height: 25rem;
-    }
-
-    .creations__grid > div > h2 {
-        font-size: 1.75rem;
-    }
+.creations__grid>div>h2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
 
     .creations__grid > div:nth-child(1) {
         background-image: url("../images/desktop/1.jpg");
@@ -470,7 +531,6 @@ main {
     display: none;
 }
 
-
-
 /*---------------------------------------------------------------------------*/
+
 
