@@ -40,7 +40,7 @@ header nav{
 #hero {
     position: relative;
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -58,24 +58,20 @@ header nav{
 }
 
 /* Estilos para las redes sociales en el video */
-.redes-sociales {
-    position: absolute;
-    /* Ajustar la distancia desde abajo */
-    right: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    color: white;
-}
 
-.redes-sociales p {
-    margin: 0;
+.redes-sociales{
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
 }
 
 .redes-icons {
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .redes-icons a {
@@ -85,26 +81,32 @@ header nav{
 .redes-icons img {
     width: 40px;
     height: 40px;
-    opacity: 0.9;
+    opacity: 0.6;
     transition: opacity 0.3s ease;
 }
 
 .redes-icons img:hover {
-    opacity: 3;
+    opacity: 1;
 }
 
 /* Estilos para el texto que se superpondrá sobre el video */
 .container-video {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
+.container-video h3{
+    margin: 2rem 0;
+}
+
+
 .content-video p {
-    color: rgb(184, 174, 182);
+    color: rgb(255, 255, 255);
+    margin: 1rem 0rem;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.534);
 }
 
@@ -116,13 +118,13 @@ header nav{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.097);
+    background-color: rgba(0, 0, 0, 0.2);
     /* Ajusta la opacidad aquí */
     z-index: 0;
 }
 
 main p{
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 
@@ -520,7 +522,7 @@ button a {
 .form-derecha textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #d5a7f0;
+    border: 1px solid #d1d1d1;
     border-radius: 5px;
 }
 
@@ -707,7 +709,6 @@ footer ul li a:hover {
         text-align: center;
         z-index: 1;
     }
-
 
     .redes-icons {
         justify-content: center;
